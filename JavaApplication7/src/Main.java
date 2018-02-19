@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.Scanner;
 import java.io.*;
 /**
  *
@@ -20,7 +21,11 @@ public class Main {
         // TODO code application logic here
         System.out.println("Bienvenido");
         Calculadora calc = new Calculadora();
+        Scanner teclado = new Scanner(System.in);
         int contador=0;
+        
+        String tipo = teclado.nextLine();
+        
         try {
             String sCadena;
             //Funcion para abrir y leer el documento 

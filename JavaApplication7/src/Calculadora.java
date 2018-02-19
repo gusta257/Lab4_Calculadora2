@@ -10,9 +10,21 @@ import java.util.*;
  * @author Gustavo De Leon 17085
  */
 public class Calculadora implements CalculadoraI{
-
+private String tipo;
+    /**
+    * @return eFrec
+    */
+     public String getEFrec() {
+        return tipo;
+    }
+    /**
+    * @param eFrec the eFrec to set
+    */
+    public void setEFrec(String eFrec) {
+        this.tipo = eFrec;
+    }
     StackFactory<Integer> sFactory = new StackFactory<Integer>();
-    Stack<Integer> vector = sFactory.getStack("ArrayList");
+    Stack<Integer> vector = sFactory.getStack(tipo);
     
     public Calculadora() {
         

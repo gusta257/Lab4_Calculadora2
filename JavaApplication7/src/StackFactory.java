@@ -14,9 +14,11 @@ public class StackFactory<E> {
    public Stack<E> getStack(String entry) {
     // seleccion de la implementacion a utilizar:
 	if (entry.equals("ArrayList")){
+           System.out.println("ArrayList");
             return new StackArrayList<E>();
         }//regresa ArrayList
         else{
+            System.out.println("vector");
            return new StackVector<E>(); //regresa Vector
         }
    }
