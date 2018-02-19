@@ -9,13 +9,14 @@ import java.util.*;
  *
  * @author Gustavo
  */
-public class StackLista<E> extends AbstractStack<E> {
+/*
+public class StackList<E> extends AbstractStack<E> {
     protected List<E> lista;
      
-     public StackLista(){
+     public StackList(){
          lista= new List<E>();
      }
-      public StackLista(int n){
+      public StackList(int n){
          lista= new List<E>(n);
      }
      public void push(E item){
@@ -24,21 +25,21 @@ public class StackLista<E> extends AbstractStack<E> {
     /**
     * Remueve los valores de la lista
     * @return lista.remove(size()-1);
-    */
+    
    public E pop(){
         return lista.remove(size()-1);
    }
     /**
     * Retorna el tamaño de la lista
     * @return lista.get(size()-1);
-    */
+    
    public E peek(){
        return lista.get(size()-1);
    }
     /**
     * Verifica si la lista esta vacia
     * @return vacio
-    */
+    
    public boolean empty(){
        boolean vacio;
        if(lista.isEmpty()==true){
@@ -52,9 +53,9 @@ public class StackLista<E> extends AbstractStack<E> {
     /**
     * Retorna el tamaño de la lista
     * @return lista.size();
-    */
+    
    public int size(){
        return lista.size();
    }
     
-}
+}*/

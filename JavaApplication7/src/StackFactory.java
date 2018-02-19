@@ -16,11 +16,8 @@ public class StackFactory<E> {
 	if (entry.equals("ArrayList")){
             return new StackArrayList<E>();
         }//regresa ArrayList
-	if (entry.equals("Vector")){
-            return new StackVector<E>(); //regresa Vector
-        }
         else{
-           return new StackLista<E>();
+           return new StackVector<E>(); //regresa Vector
         }
    }
 }

@@ -10,7 +10,9 @@ import java.util.*;
  * @author Gustavo De Leon 17085
  */
 public class Calculadora implements CalculadoraI{
-    Stack<Integer> vector = new StackVector();
+    StackFactory<Integer> sFactory = new StackFactory<Integer>();
+    Stack<Integer> vector = sFactory.getStack("ArrayList");
+    
     
    
     /**Metodo para calcular los datos que se encuentran en el archivo
