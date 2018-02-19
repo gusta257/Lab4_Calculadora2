@@ -12,16 +12,16 @@ import java.util.*;
 public class Calculadora implements CalculadoraI{
 private String tipo;
     /**
-    * @return eFrec
+    * @return tipo
     */
-     public String getEFrec() {
+     public String getTipo() {
         return tipo;
     }
     /**
-    * @param eFrec the eFrec to set
+    * @param tipo the tipo to set
     */
-    public void setEFrec(String eFrec) {
-        this.tipo = eFrec;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
     StackFactory<Integer> sFactory = new StackFactory<Integer>();
     Stack<Integer> vector = sFactory.getStack(tipo);
