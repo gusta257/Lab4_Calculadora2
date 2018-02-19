@@ -5,18 +5,19 @@ import java.util.*;
  * and open the template in the editor.
  */
 
-
 /**
- * @author Luis Esturban 17256
- * @author Gustavo De Leon 17085
+ *
+ * @author Gustavo
  */
-public class StackVector<E> extends AbstractStack<E> {
-     protected Vector<E> lista;
+public class StackLista<E> extends AbstractStack<E> {
+    protected List<E> lista;
      
-     public StackVector(){
-         lista= new Vector<E>();
+     public StackLista(){
+         lista= new List<E>();
      }
-
+      public StackLista(int n){
+         lista= new List<E>(n);
+     }
      public void push(E item){
           lista.add(item);
      }
@@ -55,4 +56,5 @@ public class StackVector<E> extends AbstractStack<E> {
    public int size(){
        return lista.size();
    }
+    
 }

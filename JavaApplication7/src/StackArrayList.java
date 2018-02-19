@@ -5,18 +5,16 @@ import java.util.*;
  * and open the template in the editor.
  */
 
-
 /**
- * @author Luis Esturban 17256
- * @author Gustavo De Leon 17085
+ *
+ * @author Gustavo
  */
-public class StackVector<E> extends AbstractStack<E> {
-     protected Vector<E> lista;
+public class StackArrayList<E> extends AbstractStack<E> {
+    protected ArrayList<E> lista;
      
-     public StackVector(){
-         lista= new Vector<E>();
+     public StackArrayList(){
+         lista= new ArrayList<E>();
      }
-
      public void push(E item){
           lista.add(item);
      }
@@ -38,16 +36,7 @@ public class StackVector<E> extends AbstractStack<E> {
     * Verifica si la lista esta vacia
     * @return vacio
     */
-   public boolean empty(){
-       boolean vacio;
-       if(lista.isEmpty()==true){
-           vacio = true;
-       }
-       else{
-           vacio = false;
-       }
-       return vacio;
-   }
+
     /**
     * Retorna el tamaño de la lista
     * @return lista.size();
@@ -55,4 +44,5 @@ public class StackVector<E> extends AbstractStack<E> {
    public int size(){
        return lista.size();
    }
+    
 }

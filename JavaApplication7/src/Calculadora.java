@@ -10,8 +10,8 @@ import java.util.*;
  * @author Gustavo De Leon 17085
  */
 public class Calculadora implements CalculadoraI{
-    Stack<Integer> pila = new StackVector();
-   
+    Stack<Integer> vector = new StackVector();
+    
    
     /**Metodo para calcular los datos que se encuentran en el archivo
      * @param exp
@@ -33,40 +33,40 @@ public class Calculadora implements CalculadoraI{
                 //si el caracter es un numero entre 0 a 9 
                 if(letra >= '0' && letra <= '9'){ 
                     num = Integer.parseInt("" + exp.charAt(i));
-                    pila.push(num);
+                    vector.push(num);
                 }
                 //si es el simbolo de + hace la suma entre los numeros 
                 else if ((letra == '+')){
-                    n1 = pila.pop();
-                    n2 = pila.pop();
+                    n1 = vector.pop();
+                    n2 = vector.pop();
                     resp = n1+n2;
-                    pila.push(resp);
+                    vector.push(resp);
                 }
                 //si es el simbolo de - hace la resta entre los numeros 
                 else if ((letra == '-')){ 
-                    n2 = pila.pop();
-                    n1 = pila.pop();
+                    n2 = vector.pop();
+                    n1 = vector.pop();
                     resp = n1-n2;
-                    pila.push(resp);
+                    vector.push(resp);
                 }
                 //si es el simbolo de * hace la multiplicacion entre los numeros 
                 else if ((letra == '*')){ 
-                    n1 = pila.pop();
-                    n2 = pila.pop();
+                    n1 = vector.pop();
+                    n2 = vector.pop();
                     resp = n1*n2;
-                    pila.push(resp);
+                    vector.push(resp);
                 }
                 //si es el simbolo de / hace la division entre los numeros 
                 else if ((letra == '/')){ 
-                    n2 = pila.pop();
-                    n1 = pila.pop();
+                    n2 = vector.pop();
+                    n1 = vector.pop();
                     resp = n1/n2;
-                    pila.push(resp);
+                    vector.push(resp);
                 }
             }
         }
         //fin pasa de tipo stack a tipo string 
-        fin = pila.pop()+"";
+        fin = vector.pop()+"";
         return fin;
     }
 }
