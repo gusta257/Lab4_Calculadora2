@@ -19,7 +19,7 @@ public class Main {
         
         // TODO code application logic here
         System.out.println("Bienvenido");
-        //Calculadora calc = new Calculadora();
+        Calculadora calc = new Calculadora();
         int contador=0;
         try {
             String sCadena;
@@ -29,7 +29,7 @@ public class Main {
             //bucle para hacer las funciones dependiendo de las lineas del documento
             while ((sCadena = bf.readLine())!=null) {       
                 contador=contador+1;
-            //    System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena));
+                System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena));
             } 
         //Sirve si algun dato del documento no sirva
         }catch(Exception e){
