@@ -5,8 +5,8 @@
  */
 
 /**
- *
- * @author Gustavo
+ * @author Luis Esturban 17256
+ * @author Gustavo De Leon 17085
  */
 public class SinglyLinkedList<E> extends AbstractList<E> {
    protected int count; // list size

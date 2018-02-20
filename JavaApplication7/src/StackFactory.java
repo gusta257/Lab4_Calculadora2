@@ -5,8 +5,8 @@
  */
 
 /**
- *
- * @author Gustavo
+ * @author Luis Esturban 17256
+ * @author Gustavo De Leon 17085
  */
 public class StackFactory<E> {
 //selecciona la implementacion a utilizar para un stack

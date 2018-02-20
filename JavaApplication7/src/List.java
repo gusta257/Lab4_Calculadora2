@@ -8,8 +8,8 @@ import java.util.Iterator;
  */
 
 /**
- *
- * @author Gustavo
+ * @author Luis Esturban 17256
+ * @author Gustavo De Leon 17085
  */
 public interface List<E> extends Stack<E> 
 {

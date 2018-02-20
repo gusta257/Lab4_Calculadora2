@@ -8,8 +8,8 @@ import java.util.Iterator;
  */
 
 /**
- *
- * @author Gustavo
+ *@author Luis Esturban 17256
+ * @author Gustavo de leon 17085
  */
 public class CircularList<E> extends AbstractList<E>{
 

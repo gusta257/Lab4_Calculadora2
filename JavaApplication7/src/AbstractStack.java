@@ -5,8 +5,8 @@
  */
 
 /**
- *
- * @author Gustavo
+ *@author Luis Esturban 17256
+ * @author Gustavo de Leon 17085
  */
 abstract public class AbstractStack<E> implements Stack<E>{
       public boolean empty()

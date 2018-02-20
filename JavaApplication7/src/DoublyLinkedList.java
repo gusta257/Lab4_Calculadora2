@@ -8,8 +8,8 @@ import java.util.Iterator;
  */
 
 /**
- *
- * @author Gustavo
+ * @author Luis Esturban 17256
+ * @author Gustavo De Leon 17085
  */
 public class DoublyLinkedList<E> extends AbstractList<E>{
     protected int count;

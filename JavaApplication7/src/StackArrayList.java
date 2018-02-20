@@ -6,8 +6,8 @@ import java.util.*;
  */
 
 /**
- *
- * @author Gustavo
+ * @author Luis Esturban 17256
+ * @author Gustavo De Leon 17085
  */
 public class StackArrayList<E> extends AbstractStack<E> {
     protected ArrayList<E> lista;
