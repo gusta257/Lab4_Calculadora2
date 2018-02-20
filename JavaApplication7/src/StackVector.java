@@ -10,7 +10,7 @@ import java.util.*;
  * @author Luis Esturban 17256
  * @author Gustavo De Leon 17085
  */
-public class StackVector<E> extends AbstractStack<E> {
+public class StackVector<E> implements Stack<E> {
      protected Vector<E> lista;
      
      public StackVector(){

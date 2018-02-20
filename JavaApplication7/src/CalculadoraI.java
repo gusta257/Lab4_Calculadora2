@@ -13,5 +13,5 @@
  * Interfaz para calculadora
  */
 public interface CalculadoraI {
-    String calcular(String exp);
+    String calcular(String exp,String rpt);
 }

@@ -20,10 +20,44 @@ public abstract class AbstractList<E> implements List<E>{
       return size() == 0;
    }
   
-  public boolean contains(E value)
-  // pre: value is not null
-  // post: returns true iff list contains an object equal to value
-  {
-	return -1 != indexOf(value);
-  }
+  
+  public void push(E item)
+    {
+        addLast(item);
+    
+    }
+   
+   /**
+    *
+    */
+   public E pop()
+   {
+       
+       return removeLast();
+   }
+  
+   /**
+    *
+    */
+   public E peek()
+   {
+       return getLast();
+       
+   }
+   
+   /**
+    * 
+    */
+   public boolean empty()
+   {
+       return size()==0;
+   }
+   
+   /**
+    * 
+    */
+   public int size()
+   {
+       return 0;
+   }
 }

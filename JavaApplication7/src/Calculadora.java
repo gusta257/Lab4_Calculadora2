@@ -10,32 +10,21 @@ import java.util.*;
  * @author Gustavo De Leon 17085
  */
 public class Calculadora implements CalculadoraI{
-private String tipo;
-    /**
-    * @return tipo
-    */
-     public String getTipo() {
-        return tipo;
-    }
-    /**
-    * @param tipo the tipo to set
-    */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    StackFactory<Integer> sFactory = new StackFactory<Integer>();
-    Stack<Integer> vector = sFactory.getStack(tipo);
-    
-    public Calculadora() {
-        
-    }
-    
-   
+   private static Calculadora calc; 
+   public static Calculadora getInstance(){ 
+      if (calc == null){ 
+          calc = new Calculadora();
+      }
+      return calc;
+  }
+    StackFactory sFactory = new StackFactory();
+
     /**Metodo para calcular los datos que se encuentran en el archivo
      * @param exp
      */
     @Override
-    public String calcular(String exp) {
+    public String calcular(String exp,String rpt) {
+        Stack<Integer> vector = sFactory.getStack(rpt);
         int n1;//primer numero ingresado/leido
         int n2; //segundo numero ingresado/leido
         int num;//variable para contener el valor como numero 
