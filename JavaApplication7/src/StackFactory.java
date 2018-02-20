@@ -13,27 +13,27 @@ public class StackFactory<E> {
 //se utiliza el patron Factory
    public static Stack getStack(String entry) {
     // seleccion de la implementacion a utilizar:
-    if (entry.equals("ArrayList")){
+    if (entry.equalsIgnoreCase("ArrayList")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio ArrayList");
         return new StackArrayList();
     }//regresa ArrayList
-    if (entry.equals("Lista simple")){
+    if (entry.equalsIgnoreCase("Lista simple")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Lista simple");
         return new SinglyLinkedList();
     }//regresa ArrayList
-    if (entry.equals("Lista doblemente enlazada")){
+    if (entry.equalsIgnoreCase("Lista doblemente enlazada")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Lista doblemente enlazada");
         return new DoublyLinkedList();
     }//regresa ArrayList
-    if (entry.equals("Lista circular")){
+    if (entry.equalsIgnoreCase("Lista circular")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Lista Circular");
         return new DoublyLinkedList();
     }//regresa ArrayList
-    if(entry.equals("Vector")){
+    if(entry.equalsIgnoreCase("Vector")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Vector");
        return new StackVector(); //regresa Vector
