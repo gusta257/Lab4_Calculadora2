@@ -35,7 +35,7 @@ public class Main {
           System.out.println("Lista doblemente enlazada");
           System.out.println("Lista circular");
           System.out.println("-------------------------------------------------------------------------------------");
-          String opt = teclado.nextLine();
+          String rpt = teclado.nextLine();
         
         int contador=0;
         try {
@@ -46,7 +46,7 @@ public class Main {
             //bucle para hacer las funciones dependiendo de las lineas del documento
             while ((sCadena = bf.readLine())!=null) {       
                 contador=contador+1;
-                System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena,opt));
+                System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena,rpt));
             } 
         //Sirve si algun dato del documento no sirva
         }catch(Exception e){
