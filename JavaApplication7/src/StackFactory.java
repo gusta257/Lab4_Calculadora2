@@ -22,22 +22,22 @@ public class StackFactory<E> {
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Lista simple");
         return new SinglyLinkedList();
-    }//regresa ArrayList
+    }//regresa Lista simple
     if (entry.equalsIgnoreCase("Lista doblemente enlazada")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Lista doblemente enlazada");
         return new DoublyLinkedList();
-    }//regresa ArrayList
+    }//regresa Lista doble enlazada
     if (entry.equalsIgnoreCase("Lista circular")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Lista Circular");
         return new DoublyLinkedList();
-    }//regresa ArrayList
+    }//regresa Lista circular
     if(entry.equalsIgnoreCase("Vector")){
        System.out.println("-------------------------------------------------------------------------------------");
        System.out.println("Usted escogio Vector");
-       return new StackVector(); //regresa Vector
-    }
+       return new StackVector();
+    }//regresa Vector
     else{
         System.out.println("Usted escrbio mal xd");
     }
